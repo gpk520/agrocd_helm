@@ -14,3 +14,7 @@ steps:
 # Push frontend
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'asia-south1-docker.pkg.dev/$PROJECT_ID/my-repo/frontend:latest']
+
+# ✅ ADD THIS
+options:
+  logging: CLOUD_LOGGING_ONLY
