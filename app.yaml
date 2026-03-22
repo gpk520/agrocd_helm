@@ -10,6 +10,7 @@ spec:
     repoURL: https://github.com/agrocd_helm/repo.git
     targetRevision: HEAD
     path: microservices
+    helm: {}
 
   destination:
     server: https://kubernetes.default.svc
