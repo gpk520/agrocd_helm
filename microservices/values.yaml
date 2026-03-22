@@ -160,7 +160,7 @@ tolerations: []
 
 affinity: {}
 backend:
-  image: asia-south1-docker.pkg.dev/PROJECT_ID/my-repo/backend:latest
+  image: asia-south1-docker.pkg.dev/ecommerce-cloudrun/my-repo/backend:latest
 
 frontend:
-  image: asia-south1-docker.pkg.dev/PROJECT_ID/my-repo/frontend:latest
+  image: asia-south1-docker.pkg.dev/ecommerce-cloudrun/my-repo/frontend:latest
