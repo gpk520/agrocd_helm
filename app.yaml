@@ -4,13 +4,17 @@ metadata:
   name: microservices-app
   namespace: argocd
 spec:
-  project: default   # ✅ ADD THIS LINE
+  project: default
 
   source:
-    repoURL: https://github.com/agrocd_helm/repo.git
+    repoURL: https://github.com/<your-username>/repo.git
     targetRevision: HEAD
     path: microservices
-    helm: {}
+
+    # ✅ THIS IS CRITICAL
+    helm:
+      valueFiles:
+        - values.yaml
 
   destination:
     server: https://kubernetes.default.svc
